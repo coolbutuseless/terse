@@ -52,10 +52,6 @@ library(terse)
 terse(mtcars)
 ```
 
-``` r
-htmltools::HTML(readLines("man/figures/mtcars.html"))
-```
-
 <img src="man/figures/mtcars.png">
 
 <details>
@@ -136,10 +132,6 @@ ll <- list(
 
 ``` r
 terse(ll, config = list(nth = 4, colour_nth = 'red'))
-```
-
-``` r
-htmltools::HTML(readLines("man/figures/ll.html"))
 ```
 
 <img src="man/figures/ll.png">
