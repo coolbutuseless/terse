@@ -91,9 +91,12 @@ terse(mtcars)
 write_html(mtcars, 'mtcars', 'man/figures/mtcars.html')
 ```
 
-```{r echo=FALSE}
+```{r eval=FALSE}
 htmltools::HTML(readLines("man/figures/mtcars.html"))
 ```
+
+
+<img src="man/figures/mtcars.png">
 
 
 <details> 
@@ -139,9 +142,13 @@ terse(ll, config = list(nth = 4, colour_nth = 'red'))
 write_html(ll, 'll', 'man/figures/ll.html', config = list(nth = 4, colour_nth = 'red'))
 ```
 
-```{r echo=FALSE}
+```{r eval=FALSE}
 htmltools::HTML(readLines("man/figures/ll.html"))
 ```
+
+
+<img src="man/figures/ll.png">
+
 
 
 <details> 
