@@ -5,10 +5,10 @@
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 default_config <- list(
   ansi        = TRUE,
-  soft        = 'grey40',
+  soft        = 'grey90',
   gsep        = ', ',
   colour_nth  = 'blue4',
-  colour_all  = 'grey40',
+  colour_all  = 'grey20',
   colour_type = 'seagreen',
   nth         = 0L
 )
@@ -184,7 +184,7 @@ create_single_line <- function(x, element_widths = NULL, config = list()) {
   }
   x <- colour_vec(vec = x, n = config$nth, colour_all = config$colour_all,
                   colour_nth = config$colour_nth, use_ansi = config$ansi)
-  paste(x, collapse = config$gsep)
+  paste(x, collapse = ansi(config$gsep, fg = config$soft, use_ansi = config$ansi))
 }
 
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

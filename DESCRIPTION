@@ -1,7 +1,7 @@
 Package: terse
 Type: Package
 Title: Compact Display of R Objects
-Version: 0.1.0
+Version: 0.1.1
 Author: mikefc
 Maintainer: mikefc <mikefc@coolbutuseless.com>
 Description: Compact display of R objects.

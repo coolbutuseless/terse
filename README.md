@@ -21,6 +21,7 @@ It was built with (nested) `list` output in mind, but handles
   - Alignment of indexes at start of each row, such that names at the
     same depth are aligned under each other
   - Alignment of values within data.frames
+  - Ability to select+copy+paste the path to a particular element
 
 ### Limitations
 

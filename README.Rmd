@@ -36,6 +36,7 @@ other standard data structures in R.
 * Alignment of indexes at start of each row, such that names at the same 
   depth are aligned under each other
 * Alignment of values within data.frames
+* Ability to select+copy+paste the path to a particular element
 
 
 ### Limitations
@@ -88,7 +89,7 @@ terse(mtcars)
 
 
 ```{r eval=generate_html, echo=FALSE}
-write_html(mtcars, 'mtcars', 'man/figures/mtcars.html')
+write_html(mtcars, terse:::ansi('mtcars', 'grey90', use_ansi = TRUE), 'man/figures/mtcars.html')
 ```
 
 ```{r eval=FALSE, echo=FALSE}
@@ -139,7 +140,7 @@ terse(ll, config = list(nth = 4, colour_nth = 'red'))
 
 
 ```{r eval=generate_html, echo=FALSE}
-write_html(ll, 'll', 'man/figures/ll.html', config = list(nth = 4, colour_nth = 'red'))
+write_html(ll, terse:::ansi('ll', 'grey90', use_ansi = TRUE), 'man/figures/ll.html', config = list(nth = 4, colour_nth = 'red'))
 ```
 
 ```{r eval=FALSE, echo=FALSE}
